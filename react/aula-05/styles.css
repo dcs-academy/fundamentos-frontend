@@ -1,0 +1,14 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "Arial";
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.title {
+  color: green;
+  margin-bottom: 15px;
+}
