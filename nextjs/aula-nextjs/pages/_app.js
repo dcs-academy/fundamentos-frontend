@@ -1,19 +1,13 @@
 import "../styles/globals.css";
 import Layout from "../components/layout/multiple/Layout";
-import AccountLayout from "../components/layout/multiple/AccountLayout";
 
 function MyApp({ Component, pageProps, router }) {
-  if (router.pathname.startsWith("/account")) {
-    return (
-      <AccountLayout>
-        <Component {...pageProps} />
-      </AccountLayout>
-    );
-  }
+  const CustomLayout = Component.layout || Layout;
+
   return (
-    <Layout>
+    <CustomLayout>
       <Component {...pageProps} />
-    </Layout>
+    </CustomLayout>
   );
 }
 

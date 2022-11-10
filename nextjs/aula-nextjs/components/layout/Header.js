@@ -16,6 +16,7 @@ export default function Header() {
             {path.label}
           </Link>
         ))}
+        <input type="text" placeholder="Pesquisar" />
       </nav>
     </header>
   );

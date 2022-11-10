@@ -1,3 +1,5 @@
+import AccountLayout from "../../components/layout/multiple/AccountLayout";
+
 export default function PageAccount() {
   return (
     <div>
@@ -6,3 +8,5 @@ export default function PageAccount() {
     </div>
   );
 }
+
+PageAccount.layout = AccountLayout;
