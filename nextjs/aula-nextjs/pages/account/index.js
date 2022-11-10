@@ -1,4 +1,4 @@
-import AccountLayout from "../../components/layout/multiple/AccountLayout";
+import { getLayout } from "../../components/layout/multipleFn/AccountLayout";
 
 export default function PageAccount() {
   return (
@@ -9,4 +9,4 @@ export default function PageAccount() {
   );
 }
 
-PageAccount.layout = AccountLayout;
+PageAccount.getLayout = getLayout;

@@ -1,14 +1,11 @@
 import "../styles/globals.css";
-import Layout from "../components/layout/multiple/Layout";
+import Layout from "../components/layout/multipleFn/Layout";
 
 function MyApp({ Component, pageProps, router }) {
-  const CustomLayout = Component.layout || Layout;
+  const getLayout =
+    Component.getLayout || ((page) => <Layout children={page} />);
 
-  return (
-    <CustomLayout>
-      <Component {...pageProps} />
-    </CustomLayout>
-  );
+  return getLayout(<Component {...pageProps} />);
 }
 
 export default MyApp;
