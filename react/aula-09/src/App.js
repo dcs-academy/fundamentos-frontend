@@ -1,5 +1,5 @@
 // import ClassComponent from "./lessons/class-component";
-import SampleUseState from "./lessons/hooks/use-state";
+import SampleUseState from "./lessons/hooks/useState";
 import "./App.css";
 
 function App() {
